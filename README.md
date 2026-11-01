@@ -97,7 +97,11 @@ main { flex: 1; min-width: 0; }: ocupa todo o resto da largura. O min-width: 0 p
 
 29.
 flex-basis: define o tamanho de partida do item no eixo principal.
+
 flex-grow: define que fatia da sobra o item recebe quando sobra espaço.
+
 flex-shrink: define quanto o item cede quando falta espaço.
+
 order: muda a posição visual do item sem mexer no HTML.
+
 align-self: alinha um item individualmente no eixo cruzado, sobrepondo o align-items do pai.
