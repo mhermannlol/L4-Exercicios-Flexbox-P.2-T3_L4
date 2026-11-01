@@ -1,0 +1,12 @@
+.barra-navegacao {
+  display: flex;
+  justify-content: space-around; 
+  background-color: #00539c;
+  padding: 15px 0;
+}
+
+.barra-navegacao a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: sans-serif;
+}
