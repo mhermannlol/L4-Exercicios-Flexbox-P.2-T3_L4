@@ -4,12 +4,14 @@ Atividade de Desenvolvimento Web
 ## ***PARTE 1***
 
 **1) Revisão da parte 1**
+
 1. O contêiner é o elemento pai. Os itens são os filhos diretos dele. O display: flex vai no contêiner.
 2. O eixo principal é o horizontal (row).
 
 ***
 
 **2) Crescer: flex-grow**
+
 3. A sobra é o espaço livre na faixa, tamanho do contêiner menos a soma dos tamanhos de partida dos itens. Com flex-grow, 0 em todos. Ela fica vazia no fim da linha.
 
 4. O valor padrão de flex-grow é 0, o que significa que o item mantém o tamanho de partida, mesmo que tenha sobra.
@@ -25,6 +27,7 @@ Atividade de Desenvolvimento Web
 ***
 
 **3) Encolher: flex-shrink**
+
 9. Entra em ação quando falta espaço. O padrão é 1.
 
 10. Falta: 400 + 400 − 600 = 200px, os dois têm o mesmo tamanho e o mesmo flex-shrink, então cada um perde 100px, ou seja, a largura final vai ser de 300px cada.
@@ -36,6 +39,7 @@ Atividade de Desenvolvimento Web
 ## ***PARTE 2***
 
 **4) Tamanho de partida e atalho flex**
+
 13. O flex-basis é o tamanho de partida do item no eixo principal,quando ele é definido, ele vale mais que o width. vale 10rem, não os 200px.
 
 14. Com a base 0, os itens começam sem ocupar espaço nenhum.
@@ -53,6 +57,7 @@ flex: none / grow:0 / shrink:0 / basis:auto
 ***
 
 **5) O mínimo que trava o encolhimento**
+
 18. Quem segura é o min-width: auto que impede o item de ficar menor que seu conteúdo mínimo. A solução é min-width: 0 no item
 
 19.  em um miolo com <aside> e <main> lado a lado, quando o texto tem uma URL longa, um trecho de código, uma tabela ou uma imagem larga. O main estoura a faixa e empurra o menu.
@@ -60,6 +65,7 @@ flex: none / grow:0 / shrink:0 / basis:auto
 ***
 
 **6) order e align-self**
+
 20. (a) Ordem na tela: C, A, B, porque order: -1 leva o C para o início. (b) Ordem do Tab: A, B, C. O foco segue a ordem do HTML. c) Leitores de tela e a navegação por teclado seguem a ordem do código, se ela difere da visual, a pessoa se perde
 
 21. O padrão é 0.primeiro aparece o de order: -1, porque os itens são ordenados do menor para o maior valor.
@@ -84,6 +90,7 @@ main { flex: 1; min-width: 0; }: ocupa todo o resto da largura. O min-width: 0 p
 ***
 
 **8) Erros comuns e síntese**
+
 27. O erro é aplicar flex-grow no contêiner, a correção é colocar flex-grow: 1 no filho que deve crescer e display: flex no pai.
 
 28. min-width: 0 (com overflow-wrap ou overflow: hidden): indicado quando o item é flexível e pode encolher e quebrar o conteúdo. flex-wrap: wrap: indicado quando os itens devem manter o tamanho e podem passar para a linha de baixo.
