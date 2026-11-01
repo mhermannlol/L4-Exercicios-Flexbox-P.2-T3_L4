@@ -85,9 +85,9 @@ sticky: cabeçalho de tabelas longas ou menus de navegação.
 
 **17.**
 
-O navegador interpreta quebras de linha e espaços em branco dentro das tags <li> como espaço de texto.
+O navegador interpreta quebras de linha e espaços em branco dentro das tags (<li>) como espaço de texto.
 
-remover os espaços entre os <li> no HTML.
+remover os espaços entre os (<li>) no HTML.
 
 
 **18.**
